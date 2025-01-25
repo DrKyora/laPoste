@@ -21,13 +21,16 @@
           <option value="Paiement de facture">Paiement de facture</option>
         </select>
       </fieldset>
-      <fieldset>
+      <fieldset class="prioritaire">
         <legend>Catégories spéciales</legend>
-        <input type="checkbox" id="handicape" name="handicape" />
-        <label for="handicape">Handicapé</label>
-        <br />
-        <input type="checkbox" id="senior" name="senior" />
-        <label for="senior">Senior</label>
+        <fieldset>
+          <legend>Handicapé</legend>
+          <input type="checkbox" id="handicape" name="handicape" />
+        </fieldset>
+        <fieldset>
+          <legend>Senior</legend>
+          <input type="checkbox" id="senior" name="senior" />
+        </fieldset>
       </fieldset>
       <button type="submit">M'enregistrer</button>
     </form>

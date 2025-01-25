@@ -24,7 +24,7 @@ td {
 }
 
 .prioritaire {
-  background-color: #ffeeee;
+  display: flex;
 }
 
 #message {
