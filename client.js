@@ -1,7 +1,7 @@
 class Client {
-  constructor(nom, service, handicape, senior) {
+  constructor(nom, serviceDemande, handicape = false, senior = false) {
     this.nom = nom;
-    this.serviceDemande = service;
+    this.serviceDemande = serviceDemande;
     this.handicape = handicape;
     this.senior = senior;
   }
