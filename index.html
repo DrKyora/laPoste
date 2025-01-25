@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bureau de Poste</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Bureau de Poste</h1>
+
+    <form id="clientForm">
+      <fieldset>
+        <legend>Nom du client:</legend>
+        <input type="text" id="nomClient" required />
+      </fieldset>
+      <fieldset>
+        <legend>Service demandé:</legend>
+        <select id="serviceDemande" required>
+          <option value="Envoi de courrier">Envoi de courrier</option>
+          <option value="Retrait de colis">Retrait de colis</option>
+          <option value="Paiement de facture">Paiement de facture</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Catégories spéciales</legend>
+        <input type="checkbox" id="handicape" name="handicape">
+        <label for="handicape">Handicapé</label>
+        <br>
+        <input type="checkbox" id="senior" name="senior">
+        <label for="senior">Senior</label>
+      </fieldset>
+      <label>
+      <button type="submit">M'enregistrer</button>
+    </form>
+    <div id="message"></div>
+    <table id="fileAttente">
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Service</th>
+          <th>Handicapé</th>
+          <th>Senior</th>
+        </tr>
+      </thead>
+      <tbody id="listeClients"></tbody>
+    </table>
+    <button id="servirClient">Servir Client</button>
+    <table id="historiqueClients">
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Service</th>
+            <th>Handicapé</th>
+            <th>Senior</th>
+            <th>Temps d'attente</th>
+          </tr>
+        </thead>
+        <tbody id="listeHistorique"></tbody>
+      </table>
+    <script src="client.js"></script>
+    <script src="file-postale.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
