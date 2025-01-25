@@ -40,13 +40,11 @@ class FilePostale {
   servirClient() {
     if (this.clients.length === 0) {
       alert("Aucun client dans la file d'attente");
-      return;
     }
 
     const clientServi = this.clients.shift();
     if (!clientServi) {
-      console.log("Erreur : clientServi est undefined");
-      return;
+      alert("Erreur : clientServi est undefined");
     }
 
     const dateDepart = new Date(); // enregistre la date de départ du client
